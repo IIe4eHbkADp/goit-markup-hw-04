@@ -7,6 +7,7 @@
   --bgc-second-color: #2f303a;
   --color-section: #f5f4fa;
   --logo-color: #000000;
+  --svg-main-color: #afb1b8;
 }
 
 body {
@@ -279,13 +280,29 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.team-item {
+.profession {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.social-list .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+.social {
+}
 /* *------Company------------ */
 
 .company {
@@ -298,19 +315,30 @@ body {
   align-items: center;
   margin-top: 50px;
 }
+.client .client-list {
+  color: var(--svg-main-color);
+}
 .company-item {
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-main-color);
   border-radius: 4px;
 }
 .client .client-list:not(:last-child) {
   margin-right: 30px;
+}
+
+.icon-client {
+  fill: currentColor;
 }
 .clients-item {
   background-position: center;
   width: 106px;
   height: 60px;
   margin: 16px 32px;
-  fill: #afb1b8;
+  color: var(--svg-main-color);
+}
+.icon-client:focus,
+.icon-client:hover {
+  fill: var(--accent-text-color);
 }
 
 /*----------------------------------- Footer----------------------------- */
