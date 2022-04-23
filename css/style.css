@@ -8,6 +8,7 @@
   --color-section: #f5f4fa;
   --logo-color: #000000;
   --svg-main-color: #afb1b8;
+  --svg-bg-footer: #43444d;
 }
 
 body {
@@ -157,8 +158,6 @@ body {
   text-transform: uppercase;
   color: var(--main-color);
 }
-.hero {
-}
 
 /* Button */
 
@@ -207,6 +206,17 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+.bg-img {
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-section);
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list {
@@ -285,6 +295,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .social-list .social-item:not(:last-child) {
   margin-right: 10px;
@@ -292,16 +303,23 @@ body {
 .social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .social-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: tomato;
+  fill: currentColor;
+}
+.social-list .social-link:focus,
+.social-link:hover {
+  fill: var(--main-color);
+  background-color: var(--accent-text-color);
 }
 .social {
+  color: var(--svg-main-color);
 }
 /* *------Company------------ */
 
@@ -371,7 +389,49 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.footer-section {
+  display: flex;
+}
+.section-title.footer-social {
+  color: var(--main-color);
+}
+.footer-social .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-section {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+.footer-social {
+  display: flex;
+}
+.section-title.social-footer {
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+.social-link.footer-social {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--svg-bg-footer);
+
+  border-radius: 50%;
+  fill: currentColor;
+}
+.social-list .social-link:focus,
+.social-link:hover {
+  background-color: var(--accent-text-color);
+}
+.social.links {
+  color: var(--main-color);
+}
+
 /*-------------------------- Porfolio filter button------------------------ */
+
 .section-filter {
   display: flex;
   justify-content: center;
