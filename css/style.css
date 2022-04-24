@@ -35,7 +35,7 @@ body {
   margin-right: auto;
 }
 
-/*------------------------------- Header------------------------- */
+/* *------------------------------- Header------------------------- */
 
 .header {
   border-bottom: 1px solid var(--border-main-color);
@@ -91,7 +91,7 @@ body {
   color: var(--accent-text-color);
 }
 
-/*-------------------------- Contacts -----------------------*/
+/* *-------------------------- Contacts -----------------------*/
 .header-contacts {
   margin-left: auto;
   display: flex;
@@ -133,7 +133,7 @@ body {
   color: var(--accent-text-color);
 }
 
-/*------------------------- Hero--------------------- */
+/* *------------------------- Hero--------------------- */
 
 .main-hero {
   background-color: var(--bgc-second-color);
@@ -185,7 +185,7 @@ body {
   background-color: #188ce8;
 }
 
-/* ---------------------------Main section---------------------------------- */
+/* *---------------------------Main section---------------------------------- */
 .section {
   padding: 94px 0;
 }
@@ -208,7 +208,7 @@ body {
   color: var(--secondary-text-color);
 }
 .bg-img {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--color-section);
   border-radius: 4px;
@@ -253,7 +253,7 @@ body {
   margin-top: 50px;
 }
 
-/*--------------------------- Team --------------------------*/
+/* *--------------------------- Team --------------------------*/
 
 .team-list {
   display: flex;
@@ -335,23 +335,27 @@ body {
 }
 .client .client-list {
   color: var(--svg-main-color);
+  width: calc(100% / 6 - 30px);
 }
-.company-item {
-  border: 1px solid var(--svg-main-color);
-  border-radius: 4px;
-}
+
 .client .client-list:not(:last-child) {
   margin-right: 30px;
 }
 
 .icon-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: currentColor;
+
+  border: 1px solid var(--svg-main-color);
+  border-radius: 4px;
+  height: 92px;
 }
 .clients-item {
   background-position: center;
   width: 106px;
   height: 60px;
-  margin: 16px 32px;
   color: var(--svg-main-color);
 }
 .icon-client:focus,
@@ -359,7 +363,7 @@ body {
   fill: var(--accent-text-color);
 }
 
-/*----------------------------------- Footer----------------------------- */
+/* *----------------------------------- Footer----------------------------- */
 
 .footer {
   padding: 60px 0;
@@ -430,7 +434,7 @@ body {
   color: var(--main-color);
 }
 
-/*-------------------------- Porfolio filter button------------------------ */
+/* *-------------------------- Portfolio filter button------------------------ */
 
 .section-filter {
   display: flex;
@@ -468,7 +472,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/*----------------------------------- Portfolio------------------------------- */
+/* *----------------------------------- Portfolio------------------------------- */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
