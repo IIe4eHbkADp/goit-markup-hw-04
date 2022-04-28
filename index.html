@@ -27,38 +27,40 @@
     <header class="header">
       <div class="container">
         <!-- Navigation -->
-        <a class="header-logo" href="./index.html">Web<span class="logo">Studio</span></a>
-        <nav class="header-navigation">
-          <ul class="header-list nav">
-            <li class="header-item">
-              <a class="header-link current" href="./index.html">Студия</a>
+        <div class="wrapper">
+          <a class="header-logo" href="./index.html">Web<span class="logo">Studio</span></a>
+          <nav class="header-navigation">
+            <ul class="header-list nav">
+              <li class="header-item">
+                <a class="header-link current" href="./index.html">Студия</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Contacts -->
+          <ul class="header-contacts">
+            <li class="header-item contact">
+              <a class="contacts-item" href="mailto:info@devstudio.com">
+                <svg class="contacts-email">
+                  <use href="./images/icon.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="header-item">
-              <a class="header-link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="">Контакты</a>
+            <li class="header-item contact">
+              <a class="contacts-item" href="tel:+380961111111"
+                ><svg class="contacts-phone">
+                  <use href="./images/icon.svg#icon-phone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!-- Contacts -->
-        <ul class="header-contacts">
-          <li class="header-item contact">
-            <a class="contacts-item" href="mailto:info@devstudio.com">
-              <svg class="contacts-email">
-                <use href="./images/icon.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-item contact">
-            <a class="contacts-item" href="tel:+380961111111"
-              ><svg class="contacts-phone">
-                <use href="./images/icon.svg#icon-phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -129,10 +131,25 @@
         <h2 class="title-section">Чем мы занимаемся</h2>
         <div class="container">
           <ul class="section-image">
-            <li class="item"><img src="./images/box_1.jpg" width="370" alt="Набор кода" /></li>
-            <li class="item"><img src="./images/box_2.jpg" width="370" alt="Телефон" /></li>
             <li class="item">
-              <img src="./images/box_3.jpg" width="370" alt="Планшет с выбором цвета" />
+              <div class="thumb">
+                <h3 class="section-title bg">Десктопные приложения</h3>
+                <img src="./images/box_1.jpg" width="370" alt="Десктопные приложения" />
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="thumb">
+                <h3 class="section-title bg">Мобильные приложения</h3>
+                <img src="./images/box_2.jpg" width="370" alt="Мобильные приложени" />
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="thumb">
+                <h3 class="section-title bg">Дизайнерские решения</h3>
+                <img src="./images/box_3.jpg" width="370" alt="Дизайнерские решения" />
+              </div>
             </li>
           </ul>
         </div>
