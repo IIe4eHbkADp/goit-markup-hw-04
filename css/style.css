@@ -9,6 +9,7 @@
   --logo-color: #000000;
   --svg-main-color: #afb1b8;
   --svg-bg-footer: #43444d;
+  --cover-color: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -563,6 +564,30 @@ body {
   text-align: left;
   letter-spacing: 0.06em;
 }
+.portfolio-link:hover .text-cover {
+  transform: translateY(0);
+}
+.portfolio-cover {
+  position: relative;
+  overflow: hidden;
+}
+.text-cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--main-color);
+  background-color: var(--cover-color);
+  padding: 63px 24px 0 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .cards {
   padding: 20px 24px;
 }
