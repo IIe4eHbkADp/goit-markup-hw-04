@@ -83,9 +83,6 @@ body {
   color: var(--secondary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list.header-link:focus,
 .header-link:hover {
@@ -131,9 +128,6 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--main-text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts.contacts-item:focus,
 .contacts-item:hover {
@@ -186,9 +180,6 @@ body {
 .button.hero-button {
   color: var(--main-color);
   background-color: var(--accent-text-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus,
 .button:hover {
@@ -322,9 +313,6 @@ body {
   height: 40px;
   border-radius: 50%;
   fill: currentColor;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list .social-link:focus,
 .social-link:hover {
@@ -347,6 +335,7 @@ body {
   margin-top: 50px;
 }
 .client .client-list {
+  color: var(--svg-main-color);
   width: calc(100% / 6 - 30px);
 }
 
@@ -358,11 +347,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--svg-main-color);
   fill: currentColor;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   border: 1px solid var(--svg-main-color);
   border-radius: 4px;
@@ -372,10 +357,11 @@ body {
   background-position: center;
   width: 106px;
   height: 60px;
+  color: var(--svg-main-color);
 }
 .icon-client:focus,
 .icon-client:hover {
-  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 /* *----------------------------------- Footer----------------------------- */
@@ -440,9 +426,6 @@ body {
 
   border-radius: 50%;
   fill: currentColor;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list .social-link:focus,
 .social-link:hover {
@@ -477,11 +460,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.button-filter {
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .section-filter .current {
   color: var(--main-color);
   background-color: var(--accent-text-color);
@@ -504,9 +482,6 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid var(--border-main-color);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list .item:hover,
 .item:focus {
@@ -563,58 +538,4 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-
-/* *Modal */
-
-.backdrop {
-  position: fixed;
-  top: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
-  background-color: var(--main-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-.modal-thumb {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-.modal-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  color: var(--logo-color);
-  fill: currentColor;
-  background-color: transparent;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-close:hover,
-.modal-cloce:focus {
-  color: var(--main-color);
-  background-color: var(--accent-text-color);
-}
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
